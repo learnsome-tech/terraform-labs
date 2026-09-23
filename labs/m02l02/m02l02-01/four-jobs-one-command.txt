@@ -1,0 +1,4 @@
+1  providers   resolve constraints, download plugins, write the lock file
+2  modules     fetch every module the configuration calls
+3  backend     work out where state lives, and connect to it
+4  workspace   prepare the local working directory itself

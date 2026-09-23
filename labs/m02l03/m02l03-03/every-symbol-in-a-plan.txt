@@ -1,0 +1,7 @@
++       create
+-       destroy
+~       update in place
+-/+     destroy and then create: the replacement
++/-     create and then destroy: replacement, created first
+<=      read a data source during apply
+(known after apply)   a value that does not exist yet

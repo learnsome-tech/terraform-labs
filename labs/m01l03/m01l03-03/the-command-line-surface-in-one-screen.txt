@@ -1,0 +1,6 @@
+terraform init       prepare this directory: plugins, modules, backend
+terraform fmt        rewrite files into canonical style
+terraform validate   is this configuration internally consistent?
+terraform plan       what would change, if I applied?
+terraform apply      make the change
+terraform destroy    remove what this configuration created

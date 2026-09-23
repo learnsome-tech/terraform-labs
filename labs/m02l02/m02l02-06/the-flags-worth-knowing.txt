@@ -1,0 +1,5 @@
+terraform init -upgrade         accept newer versions, rewrite the lock file
+terraform init -reconfigure     ignore the saved backend, set it up afresh
+terraform init -migrate-state   move existing state to a new backend
+terraform init -backend=false   skip the backend: validate and test only
+terraform init -input=false     never prompt; the flag every pipeline sets

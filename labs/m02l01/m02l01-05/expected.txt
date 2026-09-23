@@ -1,0 +1,17 @@
+main.tf
+--- old/main.tf
++++ new/main.tf
+@@ -1,9 +1,9 @@
+ resource "local_file" "greeting" {
+-  filename="hello.txt"
+-  content = "Hello from Terraform\n"
++  filename = "hello.txt"
++  content  = "Hello from Terraform\n"
+ }
+
+ resource "local_file" "receipt" {
+-    filename = "receipt.txt"
+-    content = "wrote ${local_file.greeting.filename}\n"
++  filename = "receipt.txt"
++  content  = "wrote ${local_file.greeting.filename}\n"
+ }

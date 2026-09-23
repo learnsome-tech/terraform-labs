@@ -1,0 +1,4 @@
+main.tf
+terraform.tfstate
+terraform.tfstate.backup
+The state file is empty. No resources are represented.

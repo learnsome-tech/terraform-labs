@@ -1,0 +1,5 @@
+write   -> edit .tf files, the description of what you want
+init    -> download the plugins the description needs
+plan    -> compare description with reality, show the difference
+apply   -> make the change, and record what now exists
+destroy -> remove everything the record says you created

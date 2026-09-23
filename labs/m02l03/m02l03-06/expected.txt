@@ -1,0 +1,25 @@
+local_file.greeting: Refreshing state... [id=2ee5d2acea249b250d0c5886f5016929abd6d1b7]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+-/+ destroy and then create replacement
+
+Terraform will perform the following actions:
+
+  # local_file.greeting must be replaced
+-/+ resource "local_file" "greeting" {
+      ~ content              = <<-EOT # forces replacement
+          - Hello from Terraform
+          + Hello from Terraform, again
+        EOT
+      ~ content_base64sha256 = "IqBLfRwOUQN7HJwOD9wkP5aYGVSFYOHa8qi2LZz+OPc=" -> (known after apply)
+      ~ content_base64sha512 = "xb4mOvwXK/4IgkIdf9RKeIXP0766mT+tXnmgRLXVUAJ1hewbs65AwxTUcqVsNLuWVKA5daQ2wzWgwkB3j7Y5Ww==" -> (known after apply)
+      ~ content_md5          = "a1a47e3cb3032413a5e0c8d70113a312" -> (known after apply)
+      ~ content_sha1         = "2ee5d2acea249b250d0c5886f5016929abd6d1b7" -> (known after apply)
+      ~ content_sha256       = "22a04b7d1c0e51037b1c9c0e0fdc243f969819548560e1daf2a8b62d9cfe38f7" -> (known after apply)
+      ~ content_sha512       = "c5be263afc172bfe0882421d7fd44a7885cfd3beba993fad5e79a044b5d550027585ec1bb3ae40c314d472a56c34bb9654a03975a436c335a0c240778fb6395b" -> (known after apply)
+      ~ id                   = "2ee5d2acea249b250d0c5886f5016929abd6d1b7" -> (known after apply)
+        # (3 unchanged attributes hidden)
+    }
+
+Plan: 1 to add, 0 to change, 1 to destroy.

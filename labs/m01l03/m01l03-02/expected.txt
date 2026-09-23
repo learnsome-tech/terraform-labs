@@ -1,0 +1,2 @@
+Terraform v1.16.0
+on darwin_arm64

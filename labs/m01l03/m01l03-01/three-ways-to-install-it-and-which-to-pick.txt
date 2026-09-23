@@ -1,0 +1,3 @@
+package manager   brew install terraform     apt, dnf, choco, winget
+version manager   tfenv, asdf, mise          per project versions
+plain binary      unzip it, put it on PATH   one file, no magic

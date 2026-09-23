@@ -1,0 +1,6 @@
+before   Mozilla Public License 2.0        open source
+after    Business Source License 1.1       source available
+
+you may   read it, modify it, run it in your own company
+you may not  sell a competing service built on it
+after four years  each release converts to MPL 2.0

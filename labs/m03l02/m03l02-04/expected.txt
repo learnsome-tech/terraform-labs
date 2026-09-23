@@ -1,0 +1,35 @@
+var.environment
+╷
+│ Error: Failed to query available provider packages
+│
+│ Could not retrieve the list of available versions for provider
+│ hashicorp/local: could not connect to registry.terraform.io: failed to
+│ request discovery document: GET
+│ https://registry.terraform.io/.well-known/terraform.json giving up after 4
+│ attempt(s): Get "https://registry.terraform.io/.well-known/terraform.json":
+│ dial tcp: lookup registry.terraform.io: no such host
+│
+│ To see which modules are currently depending on hashicorp/local and what
+│ versions are specified, run the following command:
+│     terraform providers
+╵
+╷
+│ Error: No value for required variable
+│
+│   on main.tf line 1:
+│    1: variable "environment" { type = string }
+│
+│ The root module input variable "environment" is not set, and has no default
+│ value. Use a -var or -var-file command line argument to provide a value for
+│ this variable.
+╵
+╷
+│ Error: No value for required variable
+│
+│   on main.tf line 2:
+│    2: variable "instance_count" { type = number }
+│
+│ The root module input variable "instance_count" is not set, and has no
+│ default value. Use a -var or -var-file command line argument to provide a
+│ value for this variable.
+╵

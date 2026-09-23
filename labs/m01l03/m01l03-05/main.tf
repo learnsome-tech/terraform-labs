@@ -1,0 +1,17 @@
+# Infrastructure as Code with Terraform — lesson m01l03 — Installing Terraform And Meeting The CLI
+# https://learnsome.tech/courses/terraform-course/watch?lesson=m01l03
+# © LearnSome.tech
+terraform {
+  required_version = ">= 1.6.0"
+  required_providers {
+    local = {
+    source = "hashicorp/local"
+      version = "~> 2.5"
+    }
+  }
+}
+
+resource "local_file" "greeting" {
+    filename = "hello.txt"
+  content = "Hello from Terraform\n"
+}

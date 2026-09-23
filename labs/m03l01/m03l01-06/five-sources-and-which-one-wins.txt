@@ -1,0 +1,6 @@
+1  the variable's own default              lowest
+2  the environment: TF_VAR_environment
+3  terraform.tfvars, then terraform.tfvars.json
+4  any *.auto.tfvars, in alphabetical order
+5  -var-file on the command line
+6  -var on the command line                highest
