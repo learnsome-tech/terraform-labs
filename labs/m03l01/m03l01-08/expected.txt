@@ -1,0 +1,13 @@
+Planning failed. Terraform encountered an error while generating this plan.
+
+
+Error: Invalid value for variable
+
+  on terraform.tfvars line 1:
+   1: environment    = "production"
+    ├────────────────
+    │ var.environment is "production"
+
+The environment must be dev, staging or prod.
+
+This was checked by the validation rule at variables.tf:4,3-13.

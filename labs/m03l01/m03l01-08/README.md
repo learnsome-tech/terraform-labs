@@ -1,7 +1,7 @@
 # m03l01-08 · Validation stops a bad value before anything is built
 
 **Lesson:** [Parameterising With Input Variables](https://learnsome.tech/learn/terraform-course/m03l01) (lesson 3.1, module 3: Variables, Outputs And Expressions) · Pro  
-**Check:** Runs, not graded
+**Check:** Graded
 
 ## Goal
 
@@ -15,6 +15,7 @@ In the lesson: Now the validation rule earns its place. Somebody writes the word
 - [`starter/main.tf`](starter/main.tf)
 - [`starter/terraform.tfvars`](starter/terraform.tfvars): the listing from the lesson
 - [`starter/variables.tf`](starter/variables.tf)
+- [`expected.txt`](expected.txt): the output the check compares with
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps
@@ -23,10 +24,16 @@ In the lesson: Now the validation rule earns its place. Somebody writes the word
 2. Read `terraform.tfvars`.
 3. Run it: `terraform init; terraform plan 2>&1`.
 4. Check it from the repository root: `./check m03l01-08`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l01-08 --command=<id>`:
+   - `recorded` (Lesson command): `terraform init; terraform plan 2>&1`
+   - `init` (Init): `terraform init`
+   - `validate` (Validate): `terraform validate`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
-## What the lesson recorded
-
-Shown for reference; the check does not compare it.
+## Expected output
 
 ```text
 Planning failed. Terraform encountered an error while generating this plan.
@@ -48,7 +55,7 @@ This was checked by the validation rule at variables.tf:4,3-13.
 
 `./check m03l01-08` copies `starter/` into a scratch directory and runs `terraform init; terraform plan 2>&1` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
 
-It runs without a pass or fail: what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail. `./check` shows the output and the exit code.
+It passes when the output matches `expected.txt` by the site's rules, within the limits. Standard output and standard error are compared after Terraform's machine-specific noise is set aside: provider download lines, advisory text, colour and blank lines are dropped, and resource ids, versions, durations, timestamps and working directories are masked. A pass here is a pass on the site.
 
 ---
 

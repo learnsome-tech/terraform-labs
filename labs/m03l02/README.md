@@ -8,7 +8,7 @@ Module 3: Variables, Outputs And Expressions · lesson 3.2 · Pro · [Open the l
 
 | Lab | What it is | Check |
 | --- | --- | --- |
-| [m03l02-02](m03l02-02/) | Declaring outputs | Read along |
+| [m03l02-02](m03l02-02/) | Declaring outputs | Checker |
 | [m03l02-03](m03l02-03/) | Locals: name an expression once | Read along |
 | [m03l02-04](m03l02-04/) | Apply, and see the outputs | Runs, not graded |
 | [m03l02-05](m03l02-05/) | Reading outputs from a script | Runs, not graded |

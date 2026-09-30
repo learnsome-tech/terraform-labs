@@ -9,7 +9,7 @@ Module 4: Building A Network Module · lesson 4.3 · Pro · [Open the lesson](ht
 | Lab | What it is | Check |
 | --- | --- | --- |
 | [m04l03-01](m04l03-01/) | The root module calls the child | Read along |
-| [m04l03-02](m04l03-02/) | Call the network module | Read along |
+| [m04l03-02](m04l03-02/) | Call the network module | Checker |
 | [m04l03-03](m04l03-03/) | Types make calls safer | Read along |
 
 ## Exercises

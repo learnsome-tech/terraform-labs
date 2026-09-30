@@ -24,6 +24,13 @@ In the lesson: Type this into a file called main dot t f in an empty directory. 
    - Line 2: refuse to run at all on an older CLI than this
 4. Edit `main.tf` and check it: `terraform init; terraform validate`.
 5. Check it from the repository root: `./check m01l03-04`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m01l03-04 --command=<id>`:
+   - `validate` (Validate): `terraform validate`
+   - `init` (Init): `terraform init`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## How to check
 

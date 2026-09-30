@@ -22,6 +22,14 @@ In the lesson: Run it a second time on a directory that is already prepared. The
 2. Read `main.tf`.
 3. Run it: `terraform init; terraform init`.
 4. Check it from the repository root: `./check m02l02-05`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m02l02-05 --command=<id>`:
+   - `recorded` (Lesson command): `terraform init; terraform init`
+   - `init` (Init): `terraform init`
+   - `validate` (Validate): `terraform validate`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## Expected output
 

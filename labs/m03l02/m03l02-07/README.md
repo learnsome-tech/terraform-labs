@@ -24,6 +24,14 @@ In the lesson: One error worth meeting on purpose. Define a local with the same 
 2. Read `extra.tf`.
 3. Run it: `terraform init; terraform plan -var environment=dev 2>&1|head -1`.
 4. Check it from the repository root: `./check m03l02-07`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l02-07 --command=<id>`:
+   - `recorded` (Lesson command): `terraform init; terraform plan -var environment=dev 2>&1|head -1`
+   - `init` (Init): `terraform init`
+   - `validate` (Validate): `terraform validate`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## Expected output
 

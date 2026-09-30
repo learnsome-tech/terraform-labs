@@ -18,5 +18,43 @@
     "sh",
     "terraform"
   ],
-  "note": "what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail."
+  "tool": "terraform",
+  "commands": [
+    {
+      "id": "recorded",
+      "label": "Lesson command",
+      "line": "terraform init; terraform init>/dev/null;terraform apply -auto-approve|head -1"
+    },
+    {
+      "id": "init",
+      "label": "Init",
+      "line": "terraform init"
+    },
+    {
+      "id": "validate",
+      "label": "Validate",
+      "line": "terraform validate"
+    },
+    {
+      "id": "plan",
+      "label": "Plan",
+      "line": "terraform plan"
+    },
+    {
+      "id": "apply",
+      "label": "Apply",
+      "line": "terraform apply -auto-approve"
+    },
+    {
+      "id": "fmt",
+      "label": "Format check",
+      "line": "terraform fmt -check -diff"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "line": "terraform apply -auto-approve && terraform output"
+    }
+  ],
+  "note": "the recorded output depends on the machine it ran on, so the site runs it without a pass or fail."
 }

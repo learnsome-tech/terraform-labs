@@ -22,6 +22,14 @@ In the lesson: Start from where the last lesson finished, with the same configur
 2. Read `main.tf`.
 3. Run it: `terraform init; terraform init -input=false && terraform apply -auto-approve`.
 4. Check it from the repository root: `./check m02l04-02`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m02l04-02 --command=<id>`:
+   - `recorded` (Lesson command): `terraform init; terraform init -input=false && terraform apply -auto-approve`
+   - `init` (Init): `terraform init`
+   - `validate` (Validate): `terraform validate`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## Expected output
 

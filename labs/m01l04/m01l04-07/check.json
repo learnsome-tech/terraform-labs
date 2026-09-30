@@ -2,7 +2,7 @@
   "lab": "m01l04-07",
   "lesson": "m01l04",
   "title": "A constraint nothing can satisfy",
-  "mode": "run",
+  "mode": "graded",
   "runner": "terraform",
   "command": "terraform init; terraform init",
   "main": "main.tf",
@@ -12,11 +12,49 @@
     "main.tf"
   ],
   "stdin": null,
-  "expected": null,
-  "grading": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
   "requires": [
     "sh",
     "terraform"
   ],
-  "note": "what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail."
+  "tool": "terraform",
+  "commands": [
+    {
+      "id": "recorded",
+      "label": "Lesson command",
+      "line": "terraform init; terraform init"
+    },
+    {
+      "id": "init",
+      "label": "Init",
+      "line": "terraform init"
+    },
+    {
+      "id": "validate",
+      "label": "Validate",
+      "line": "terraform validate"
+    },
+    {
+      "id": "plan",
+      "label": "Plan",
+      "line": "terraform plan"
+    },
+    {
+      "id": "apply",
+      "label": "Apply",
+      "line": "terraform apply -auto-approve"
+    },
+    {
+      "id": "fmt",
+      "label": "Format check",
+      "line": "terraform fmt -check -diff"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "line": "terraform apply -auto-approve && terraform output"
+    }
+  ],
+  "note": null
 }

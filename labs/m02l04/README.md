@@ -9,10 +9,10 @@ Module 2: Your First Resource · lesson 2.4 · Pro · [Open the lesson](https://
 | Lab | What it is | Check |
 | --- | --- | --- |
 | [m02l04-02](m02l04-02/) | Where we left off | Graded |
-| [m02l04-03](m02l04-03/) | Confirm there is something to destroy | Read along |
-| [m02l04-04](m02l04-04/) | Previewing a destroy before doing it | Runs, not graded |
-| [m02l04-05](m02l04-05/) | Destroying it | Runs, not graded |
-| [m02l04-06](m02l04-06/) | What is left behind | Runs, not graded |
+| [m02l04-03](m02l04-03/) | Confirm there is something to destroy | Graded |
+| [m02l04-04](m02l04-04/) | Previewing a destroy before doing it | Graded |
+| [m02l04-05](m02l04-05/) | Destroying it | Graded |
+| [m02l04-06](m02l04-06/) | What is left behind | Graded |
 | [m02l04-07](m02l04-07/) | Three ways teams stop the wrong destroy | Read along |
 
 ## Check yourself

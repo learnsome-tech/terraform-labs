@@ -2,7 +2,7 @@
   "courseId": "terraform-course",
   "repository": "learnsome-tech/terraform-labs",
   "coursePage": "https://learnsome.tech/courses/terraform-course",
-  "exampleLab": "m01l03-05",
+  "exampleLab": "m01l02-04",
   "limits": {
     "timeoutSeconds": 10,
     "outputBytes": 262144
@@ -127,6 +127,36 @@
         "00fc048122bc8b753ae34bc3b0a84d2464eea386498b280430f88592d40c5c47",
         "storageclass-storage-v1.json"
       ]
+    ]
+  },
+  "toolCommands": {
+    "terraform": [
+      "init",
+      "validate",
+      "plan",
+      "apply",
+      "fmt",
+      "output"
+    ],
+    "ansible": [
+      "syntax-check",
+      "list-tasks",
+      "list-hosts"
+    ],
+    "kubeconform": [
+      "validate",
+      "verbose"
+    ],
+    "hadolint": [
+      "lint",
+      "strict"
+    ],
+    "yamllint": [
+      "lint",
+      "strict"
+    ],
+    "actionlint": [
+      "lint"
     ]
   }
 }

@@ -12,9 +12,9 @@ Module 2: Your First Resource · lesson 2.3 · Pro · [Open the lesson](https://
 | [m02l03-02](m02l03-02/) | The first plan: everything is new | Graded |
 | [m02l03-03](m02l03-03/) | Every symbol in a plan | Read along |
 | [m02l03-04](m02l03-04/) | Apply, and watch the plan become actions | Graded |
-| [m02l03-05](m02l03-05/) | Something real happened | Runs, not graded |
-| [m02l03-06](m02l03-06/) | Change one character and plan again | Runs, not graded |
-| [m02l03-07](m02l03-07/) | Saving a plan and applying exactly that | Runs, not graded |
+| [m02l03-05](m02l03-05/) | Something real happened | Graded |
+| [m02l03-06](m02l03-06/) | Change one character and plan again | Graded |
+| [m02l03-07](m02l03-07/) | Saving a plan and applying exactly that | Graded |
 
 ## Check yourself
 

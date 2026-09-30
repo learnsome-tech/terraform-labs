@@ -22,6 +22,14 @@ In the lesson: Now apply it. By default this prints the plan again and then stop
 2. Read `main.tf`.
 3. Run it: `terraform init; terraform apply -auto-approve`.
 4. Check it from the repository root: `./check m02l03-04`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m02l03-04 --command=<id>`:
+   - `recorded` (Lesson command): `terraform init; terraform apply -auto-approve`
+   - `init` (Init): `terraform init`
+   - `validate` (Validate): `terraform validate`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## Expected output
 

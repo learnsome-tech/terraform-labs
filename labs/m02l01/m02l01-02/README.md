@@ -25,6 +25,13 @@ In the lesson: Here is the file we will work from. At the top the terraform bloc
    - Line 12: greeting is your name for it, unique within this type
 4. Edit `main.tf` and check it: `terraform init; terraform validate`.
 5. Check it from the repository root: `./check m02l01-02`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m02l01-02 --command=<id>`:
+   - `validate` (Validate): `terraform validate`
+   - `init` (Init): `terraform init`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## How to check
 

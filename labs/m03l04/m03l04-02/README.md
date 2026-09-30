@@ -26,6 +26,13 @@ In the lesson: The provider requirement comes first, then a resource writes a fi
    - Line 17: the resource reference makes ordering explicit
 4. Edit `data.tf` and check it: `terraform init; terraform validate`.
 5. Check it from the repository root: `./check m03l04-02`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l04-02 --command=<id>`:
+   - `validate` (Validate): `terraform validate`
+   - `init` (Init): `terraform init`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## How to check
 

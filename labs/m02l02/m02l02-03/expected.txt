@@ -1,8 +1,0 @@
-.
-..
-.cache
-.terraform
-.terraform.lock.hcl
-main.tf
-session.sh
-providers

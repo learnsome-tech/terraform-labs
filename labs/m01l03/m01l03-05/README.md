@@ -22,6 +22,14 @@ In the lesson: Run the format command. It prints the name of every file it chang
 2. Read `main.tf`.
 3. Run it: `terraform init; terraform fmt`.
 4. Check it from the repository root: `./check m01l03-05`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m01l03-05 --command=<id>`:
+   - `recorded` (Lesson command): `terraform init; terraform fmt`
+   - `init` (Init): `terraform init`
+   - `validate` (Validate): `terraform validate`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## Expected output
 

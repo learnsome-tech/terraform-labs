@@ -26,6 +26,13 @@ In the lesson: Variables go in a file called variables dot t f by convention, th
    - Line 5: validation fails the plan, before anything is created
 4. Edit `variables.tf` and check it: `terraform init; terraform validate`.
 5. Check it from the repository root: `./check m03l01-02`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l01-02 --command=<id>`:
+   - `validate` (Validate): `terraform validate`
+   - `init` (Init): `terraform init`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## How to check
 

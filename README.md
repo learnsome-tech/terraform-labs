@@ -25,7 +25,7 @@ This repository holds the labs of the LearnSome.tech course [Infrastructure as C
   ```sh
   git clone https://github.com/learnsome-tech/terraform-labs.git
   cd terraform-labs
-  ./check m01l03-05
+  ./check m01l02-04
   ```
 
   You need Python 3 for `./check`, and for the labs themselves Python 3.14.7, Terraform 1.16.4 and actionlint 1.7.12. Other versions mostly work, but only the sandbox's versions are sure to print what the site prints. VS Code's Dev Containers extension builds the same container as Codespaces (x86-64).
@@ -34,16 +34,16 @@ This repository holds the labs of the LearnSome.tech course [Infrastructure as C
 
 1. Open the lesson on LearnSome.tech and the lab folder beside it: `labs/<lesson>/<lab>/`. The lab README has the goal, the steps and the expected output.
 2. Work in the lab's `starter/` folder.
-3. From the repository root, run `./check <lab>` (for example `./check m01l03-05`), or `./check <lesson>` for all labs of a lesson, or `./check --all`. `./check --list` shows every lab and how it is checked.
+3. From the repository root, run `./check <lab>` (for example `./check m01l02-04`), or `./check <lesson>` for all labs of a lesson, or `./check --all`. `./check --list` shows every lab and how it is checked.
 
 `./check` runs your starter the way the site's lab sandbox does: in a scratch copy that is its working directory and `HOME`, with `LANG=C.UTF-8`, `TZ=UTC`, `input.txt` on standard input, 10 seconds and 256 KiB of output per stream. It then compares the output with the site's own rules, so a pass here is a pass on the site.
 
 | Check | What `./check` does | Labs |
 | --- | --- | --- |
-| Graded | Runs the program and compares its output with `expected.txt`. | 10 |
-| Checker | Validates the file with the checker the site uses (hadolint, kubeconform, actionlint, yamllint, `ansible-playbook --syntax-check` or `terraform validate`); passes when it finds no errors. | 29 |
-| Runs, not graded | Runs the program and shows its output; the site gives no pass or fail, and the lab README says why. | 22 |
-| Read along | Nothing to run here: the site shows the listing read-only, and the lab README says honestly what it needs (Docker, a cluster, a cloud account...). | 36 |
+| Graded | Runs the program and compares its output with `expected.txt`. | 26 |
+| Checker | Validates the file with the checker the site uses (hadolint, kubeconform, actionlint, yamllint, `ansible-playbook --syntax-check` or `terraform validate`); passes when it finds no errors. | 31 |
+| Runs, not graded | Runs the program and shows its output; the site gives no pass or fail, and the lab README says why. | 7 |
+| Read along | Nothing to run here: the site shows the listing read-only, and the lab README says honestly what it needs (Docker, a cluster, a cloud account...). | 33 |
 
 ## What is published, and what is not
 

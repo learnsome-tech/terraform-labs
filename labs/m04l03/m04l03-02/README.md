@@ -1,7 +1,7 @@
 # m04l03-02 · Call the network module
 
 **Lesson:** [Calling Your Module And Passing Variables](https://learnsome.tech/learn/terraform-course/m04l03) (lesson 4.3, module 4: Building A Network Module) · Pro  
-**Check:** Read along
+**Check:** Checker
 
 ## Goal
 
@@ -17,13 +17,23 @@ In the lesson: The root calls the child with a relative source and passes two va
 
 ## Steps
 
-1. Read `starter/main.tf` alongside the lesson.
+1. Go to the starter: `cd labs/m04l03/m04l03-02/starter`
+2. Read `main.tf`.
+3. Edit `main.tf` and check it: `terraform init; terraform validate`.
+4. Check it from the repository root: `./check m04l03-02`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m04l03-02 --command=<id>`:
+   - `validate` (Validate): `terraform validate`
+   - `init` (Init): `terraform init`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## How to check
 
-**Read along.** The listing does not run cleanly in the lab sandbox (it relies on something the sandbox cannot provide), so the site shows it read-only.
+`./check m04l03-02` copies `starter/` into a scratch directory and runs `terraform init; terraform validate` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
 
-There is nothing to check: `./check m04l03-02` says so and moves on.
+This is a checker lab: it initialises the configuration (the local, null and random providers) and runs `terraform validate`: it passes when the configuration is valid. The site shows the checker's report without grading; `./check` passes when the checker finds no errors.
 
 ---
 

@@ -1,7 +1,7 @@
 # m02l03-06 · Change one character and plan again
 
 **Lesson:** [Predicting Changes, Then Applying Them](https://learnsome.tech/learn/terraform-course/m02l03) (lesson 2.3, module 2: Your First Resource) · Pro  
-**Check:** Runs, not graded
+**Check:** Graded
 
 ## Goal
 
@@ -15,6 +15,7 @@ In the lesson: Change the content of the file and plan again. This is the moment
 - [`starter/hello.txt`](starter/hello.txt)
 - [`starter/main.tf`](starter/main.tf): the listing from the lesson
 - [`starter/terraform.tfstate`](starter/terraform.tfstate)
+- [`expected.txt`](expected.txt): the output the check compares with
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps
@@ -23,10 +24,16 @@ In the lesson: Change the content of the file and plan again. This is the moment
 2. Read `main.tf`.
 3. Run it: `terraform init; terraform plan`.
 4. Check it from the repository root: `./check m02l03-06`.
+5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m02l03-06 --command=<id>`:
+   - `recorded` (Lesson command): `terraform init; terraform plan`
+   - `init` (Init): `terraform init`
+   - `validate` (Validate): `terraform validate`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
-## What the lesson recorded
-
-Shown for reference; the check does not compare it.
+## Expected output
 
 ```text
 local_file.greeting: Refreshing state... [id=2ee5d2acea249b250d0c5886f5016929abd6d1b7]
@@ -60,7 +67,7 @@ Plan: 1 to add, 0 to change, 1 to destroy.
 
 `./check m02l03-06` copies `starter/` into a scratch directory and runs `terraform init; terraform plan` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
 
-It runs without a pass or fail: what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail. `./check` shows the output and the exit code.
+It passes when the output matches `expected.txt` by the site's rules, within the limits. Standard output and standard error are compared after Terraform's machine-specific noise is set aside: provider download lines, advisory text, colour and blank lines are dropped, and resource ids, versions, durations, timestamps and working directories are masked. A pass here is a pass on the site.
 
 ---
 

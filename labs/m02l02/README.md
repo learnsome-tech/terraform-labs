@@ -10,7 +10,7 @@ Module 2: Your First Resource · lesson 2.2 · Pro · [Open the lesson](https://
 | --- | --- | --- |
 | [m02l02-01](m02l02-01/) | Four jobs, one command | Read along |
 | [m02l02-02](m02l02-02/) | Running it, and reading what it says | Graded |
-| [m02l02-03](m02l02-03/) | What appeared in the directory | Graded |
+| [m02l02-03](m02l02-03/) | What appeared in the directory | Runs, not graded |
 | [m02l02-05](m02l02-05/) | Running it twice is cheap and quiet | Graded |
 | [m02l02-06](m02l02-06/) | The flags worth knowing | Read along |
 

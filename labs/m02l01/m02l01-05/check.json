@@ -17,5 +17,43 @@
     "sh",
     "terraform"
   ],
+  "tool": "terraform",
+  "commands": [
+    {
+      "id": "recorded",
+      "label": "Lesson command",
+      "line": "terraform init; terraform fmt -diff"
+    },
+    {
+      "id": "init",
+      "label": "Init",
+      "line": "terraform init"
+    },
+    {
+      "id": "validate",
+      "label": "Validate",
+      "line": "terraform validate"
+    },
+    {
+      "id": "plan",
+      "label": "Plan",
+      "line": "terraform plan"
+    },
+    {
+      "id": "apply",
+      "label": "Apply",
+      "line": "terraform apply -auto-approve"
+    },
+    {
+      "id": "fmt",
+      "label": "Format check",
+      "line": "terraform fmt -check -diff"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "line": "terraform apply -auto-approve && terraform output"
+    }
+  ],
   "note": null
 }

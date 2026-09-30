@@ -2,9 +2,9 @@
   "lab": "m02l04-03",
   "lesson": "m02l04",
   "title": "Confirm there is something to destroy",
-  "mode": "read-along",
-  "runner": null,
-  "command": null,
+  "mode": "graded",
+  "runner": "terraform",
+  "command": "terraform init; sh session.sh",
   "main": "session.sh",
   "files": [
     "hello.txt",
@@ -13,8 +13,49 @@
     "terraform.tfstate"
   ],
   "stdin": null,
-  "expected": null,
-  "grading": null,
-  "requires": [],
-  "note": "The listing does not run cleanly in the lab sandbox (it relies on something the sandbox cannot provide), so the site shows it read-only."
+  "expected": "expected.txt",
+  "grading": "terraform",
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "tool": "terraform",
+  "commands": [
+    {
+      "id": "recorded",
+      "label": "Recorded session",
+      "line": "terraform init; sh session.sh"
+    },
+    {
+      "id": "init",
+      "label": "Init",
+      "line": "terraform init"
+    },
+    {
+      "id": "validate",
+      "label": "Validate",
+      "line": "terraform validate"
+    },
+    {
+      "id": "plan",
+      "label": "Plan",
+      "line": "terraform plan"
+    },
+    {
+      "id": "apply",
+      "label": "Apply",
+      "line": "terraform apply -auto-approve"
+    },
+    {
+      "id": "fmt",
+      "label": "Format check",
+      "line": "terraform fmt -check -diff"
+    },
+    {
+      "id": "output",
+      "label": "Output",
+      "line": "terraform apply -auto-approve && terraform output"
+    }
+  ],
+  "note": null
 }

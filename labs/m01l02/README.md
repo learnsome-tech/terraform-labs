@@ -9,7 +9,7 @@ Module 1: Core Concepts And Context · lesson 1.2 · Free · [Open the lesson](h
 | Lab | What it is | Check |
 | --- | --- | --- |
 | [m01l02-02](m01l02-02/) | August twenty twenty three: the licence changed | Read along |
-| [m01l02-04](m01l02-04/) | Which one is on this machine? | Runs, not graded |
+| [m01l02-04](m01l02-04/) | Which one is on this machine? | Graded |
 
 ## Check yourself
 

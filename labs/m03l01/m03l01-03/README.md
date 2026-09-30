@@ -25,6 +25,13 @@ In the lesson: Here is the usual header, and then one resource that uses all thr
    - Line 13: var. is how you read a variable, everywhere in the configuration
 4. Edit `main.tf` and check it: `terraform init; terraform validate`.
 5. Check it from the repository root: `./check m03l01-03`.
+6. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l01-03 --command=<id>`:
+   - `validate` (Validate): `terraform validate`
+   - `init` (Init): `terraform init`
+   - `plan` (Plan): `terraform plan`
+   - `apply` (Apply): `terraform apply -auto-approve`
+   - `fmt` (Format check): `terraform fmt -check -diff`
+   - `output` (Output): `terraform apply -auto-approve && terraform output`
 
 ## How to check
 

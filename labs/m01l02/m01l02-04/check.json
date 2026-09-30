@@ -2,7 +2,7 @@
   "lab": "m01l02-04",
   "lesson": "m01l02",
   "title": "Which one is on this machine?",
-  "mode": "run",
+  "mode": "graded",
   "runner": "bash",
   "command": "bash session.sh",
   "main": "session.sh",
@@ -10,11 +10,18 @@
     "session.sh"
   ],
   "stdin": null,
-  "expected": null,
-  "grading": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
   "requires": [
     "bash",
     "terraform"
   ],
-  "note": "what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail."
+  "commands": [
+    {
+      "id": "recorded",
+      "label": "Recorded session",
+      "line": "bash session.sh"
+    }
+  ],
+  "note": null
 }
