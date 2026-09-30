@@ -1,2 +1,2 @@
 #!/bin/sh
-terraform plan|head -1
+terraform plan

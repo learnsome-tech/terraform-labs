@@ -12,7 +12,9 @@ In the lesson: Now run the destroy itself. Interactively it asks you to type yes
 ## Files
 
 - [`starter/cmd.sh`](starter/cmd.sh): the Terraform commands the lesson ran
+- [`starter/hello.txt`](starter/hello.txt)
 - [`starter/main.tf`](starter/main.tf): the listing from the lesson
+- [`starter/terraform.tfstate`](starter/terraform.tfstate)
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps

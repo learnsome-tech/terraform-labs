@@ -11,6 +11,7 @@ In the lesson: One failure worth seeing on purpose. Ask for a version that canno
 
 ## Files
 
+- [`starter/.terraform.lock.hcl`](starter/.terraform.lock.hcl)
 - [`starter/cmd.sh`](starter/cmd.sh): the Terraform commands the lesson ran
 - [`starter/main.tf`](starter/main.tf): the listing from the lesson
 - [`check.json`](check.json): how `./check` runs and checks this lab
@@ -31,18 +32,17 @@ Initializing the backend...
 
 Initializing provider plugins...
 - Reusing previous version of hashicorp/local from the dependency lock file
-╷
-│ Error: Failed to query available provider packages
-│
-│ Could not retrieve the list of available versions for provider
-│ hashicorp/local: locked provider registry.terraform.io/hashicorp/local
-│ 2.9.1 does not match configured version constraint ~> 99.0; must use
-│ terraform init -upgrade to allow selection of new versions
-│
-│ To see which modules are currently depending on hashicorp/local and what
-│ versions are specified, run the following command:
-│     terraform providers
-╵
+
+Error: Failed to query available provider packages
+
+Could not retrieve the list of available versions for provider
+hashicorp/local: locked provider registry.terraform.io/hashicorp/local 2.9.1
+does not match configured version constraint ~> 99.0; must use terraform init
+-upgrade to allow selection of new versions
+
+To see which modules are currently depending on hashicorp/local and what
+versions are specified, run the following command:
+    terraform providers
 ```
 
 ## How to check

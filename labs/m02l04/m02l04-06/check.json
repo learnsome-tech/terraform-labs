@@ -8,7 +8,9 @@
   "main": "session.sh",
   "files": [
     "main.tf",
-    "session.sh"
+    "session.sh",
+    "terraform.tfstate",
+    "terraform.tfstate.backup"
   ],
   "stdin": null,
   "expected": null,

@@ -19,7 +19,7 @@ In the lesson: Now the formatted file, and a deliberate mistake: validate it bef
 
 1. Go to the starter: `cd labs/m01l03/m01l03-07/starter`
 2. Read `main.tf`.
-3. Run it: `terraform init; terraform validate`.
+3. Run it: `terraform init; rm -rf .terraform .terraform.lock.hcl; terraform validate`.
 4. Check it from the repository root: `./check m01l03-07`.
 
 ## What the lesson recorded
@@ -27,19 +27,17 @@ In the lesson: Now the formatted file, and a deliberate mistake: validate it bef
 Shown for reference; the check does not compare it.
 
 ```text
-╷
-│ Error: Missing required provider
-│
-│ This configuration requires provider registry.terraform.io/hashicorp/local,
-│ but that provider isn't available. You may be able to install it
-│ automatically by running:
-│   terraform init
-╵
+Error: Missing required provider
+
+This configuration requires provider registry.terraform.io/hashicorp/local,
+but that provider isn't available. You may be able to install it
+automatically by running:
+  terraform init
 ```
 
 ## How to check
 
-`./check m01l03-07` copies `starter/` into a scratch directory and runs `terraform init; terraform validate` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
+`./check m01l03-07` copies `starter/` into a scratch directory and runs `terraform init; rm -rf .terraform .terraform.lock.hcl; terraform validate` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
 
 It runs without a pass or fail: what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail. `./check` shows the output and the exit code.
 

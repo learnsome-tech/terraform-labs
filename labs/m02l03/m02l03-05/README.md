@@ -11,8 +11,10 @@ In the lesson: The file is really there, on your disk, with the content you aske
 
 ## Files
 
+- [`starter/hello.txt`](starter/hello.txt)
 - [`starter/main.tf`](starter/main.tf)
 - [`starter/session.sh`](starter/session.sh): the listing from the lesson
+- [`starter/terraform.tfstate`](starter/terraform.tfstate)
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps

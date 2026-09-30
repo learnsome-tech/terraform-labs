@@ -12,7 +12,9 @@ In the lesson: Plan with the destroy flag first. This is the same planning machi
 ## Files
 
 - [`starter/cmd.sh`](starter/cmd.sh): the Terraform commands the lesson ran
+- [`starter/hello.txt`](starter/hello.txt)
 - [`starter/main.tf`](starter/main.tf): the listing from the lesson
+- [`starter/terraform.tfstate`](starter/terraform.tfstate)
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps

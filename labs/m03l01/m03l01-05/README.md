@@ -21,7 +21,7 @@ In the lesson: Create a file called terraform dot t f vars. It is loaded without
 
 1. Go to the starter: `cd labs/m03l01/m03l01-05/starter`
 2. Read `terraform.tfvars`.
-3. Run it: `terraform init; terraform plan|head -1`.
+3. Run it: `terraform init; terraform plan`.
 4. Check it from the repository root: `./check m03l01-05`.
 
 ## What the lesson recorded
@@ -29,22 +29,42 @@ In the lesson: Create a file called terraform dot t f vars. It is loaded without
 Shown for reference; the check does not compare it.
 
 ```text
-╷
-│ Error: Inconsistent dependency lock file
-│
-│ The following dependency selections recorded in the lock file are
-│ inconsistent with the current configuration:
-│   - provider registry.terraform.io/hashicorp/local: required by this configuration but no version is selected
-│
-│ To make the initial dependency selections that will initialize the
-│ dependency lock file, run:
-│   terraform init
-╵
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # local_file.manifest will be created
+  + resource "local_file" "manifest" {
+      + content              = jsonencode(
+            {
+              + environment = "staging"
+              + machines    = 4
+              + tags        = {
+                  + Owner = "platform"
+                  + Team  = "orders"
+                }
+            }
+        )
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0777"
+      + filename             = "staging.json"
+      + id                   = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
 ```
 
 ## How to check
 
-`./check m03l01-05` copies `starter/` into a scratch directory and runs `terraform init; terraform plan|head -1` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
+`./check m03l01-05` copies `starter/` into a scratch directory and runs `terraform init; terraform plan` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
 
 It runs without a pass or fail: what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail. `./check` shows the output and the exit code.
 

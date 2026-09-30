@@ -11,8 +11,10 @@ In the lesson: One more thing, and it is how every serious pipeline works. Write
 
 ## Files
 
+- [`starter/hello.txt`](starter/hello.txt)
 - [`starter/main.tf`](starter/main.tf)
 - [`starter/session.sh`](starter/session.sh): the listing from the lesson
+- [`starter/terraform.tfstate`](starter/terraform.tfstate)
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps

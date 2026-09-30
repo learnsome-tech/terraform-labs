@@ -1,2 +1,2 @@
 #!/bin/sh
-terraform init>/dev/null;terraform plan|head -1
+terraform init>/dev/null;terraform plan -var environment=dev

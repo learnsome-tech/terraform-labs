@@ -37,8 +37,9 @@ Providers required by configuration:
 .
 ├── provider[registry.terraform.io/hashicorp/local] ~> 2.5
 └── provider[registry.terraform.io/hashicorp/random] ~> 3.6
-Terraform v1.16.0
-on darwin_arm64
+
+Terraform v1.16.4
+on linux_amd64
 + provider registry.terraform.io/hashicorp/local v2.9.1
 + provider registry.terraform.io/hashicorp/random v3.9.0
 ```

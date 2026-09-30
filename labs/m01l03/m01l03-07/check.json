@@ -4,7 +4,7 @@
   "title": "Validate, and read a real Terraform error",
   "mode": "run",
   "runner": "terraform",
-  "command": "terraform init; terraform validate",
+  "command": "terraform init; rm -rf .terraform .terraform.lock.hcl; terraform validate",
   "main": "main.tf",
   "files": [
     "cmd.sh",

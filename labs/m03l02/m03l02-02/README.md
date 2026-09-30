@@ -11,6 +11,7 @@ In the lesson: Outputs live in outputs dot t f by convention. The simplest kind 
 
 ## Files
 
+- [`starter/main.tf`](starter/main.tf)
 - [`starter/outputs.tf`](starter/outputs.tf): the listing from the lesson
 - [`check.json`](check.json): how `./check` runs and checks this lab
 

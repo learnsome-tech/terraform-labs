@@ -7,7 +7,8 @@
   "command": null,
   "main": "main.tf",
   "files": [
-    "main.tf"
+    "main.tf",
+    "modules/network/main.tf"
   ],
   "stdin": null,
   "expected": null,

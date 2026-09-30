@@ -31,8 +31,8 @@ In the lesson: You can always ask the tool itself. The version command prints th
 Shown for reference; the check does not compare it.
 
 ```text
-Terraform v1.16.0
-on darwin_arm64
+Terraform v1.16.4
+on linux_amd64
 ```
 
 ## How to check

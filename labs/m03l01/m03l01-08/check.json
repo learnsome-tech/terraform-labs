@@ -4,7 +4,7 @@
   "title": "Validation stops a bad value before anything is built",
   "mode": "run",
   "runner": "terraform",
-  "command": "terraform init; terraform plan 2>&1|head -1",
+  "command": "terraform init; terraform plan 2>&1",
   "main": "terraform.tfvars",
   "files": [
     "cmd.sh",

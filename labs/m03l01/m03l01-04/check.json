@@ -4,7 +4,7 @@
   "title": "Supplying a value on the command line",
   "mode": "run",
   "runner": "terraform",
-  "command": "terraform init; terraform init>/dev/null;terraform plan|head -1",
+  "command": "terraform init; terraform init>/dev/null;terraform plan -var environment=dev",
   "main": "main.tf",
   "files": [
     "cmd.sh",

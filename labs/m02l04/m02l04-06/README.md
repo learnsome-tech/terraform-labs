@@ -13,6 +13,8 @@ In the lesson: The file is gone. The state file is still there, but it is empty,
 
 - [`starter/main.tf`](starter/main.tf)
 - [`starter/session.sh`](starter/session.sh): the listing from the lesson
+- [`starter/terraform.tfstate`](starter/terraform.tfstate)
+- [`starter/terraform.tfstate.backup`](starter/terraform.tfstate.backup)
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps
@@ -34,6 +36,7 @@ Shown for reference; the check does not compare it.
 
 ```text
 main.tf
+session.sh
 terraform.tfstate
 terraform.tfstate.backup
 The state file is empty. No resources are represented.

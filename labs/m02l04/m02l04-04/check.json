@@ -8,7 +8,9 @@
   "main": "main.tf",
   "files": [
     "cmd.sh",
-    "main.tf"
+    "hello.txt",
+    "main.tf",
+    "terraform.tfstate"
   ],
   "stdin": null,
   "expected": null,

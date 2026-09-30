@@ -31,8 +31,8 @@ In the lesson: Open a terminal and ask it for its version. You want two things f
 Shown for reference; the check does not compare it.
 
 ```text
-Terraform v1.16.0
-on darwin_arm64
+Terraform v1.16.4
+on linux_amd64
 ```
 
 ## How to check

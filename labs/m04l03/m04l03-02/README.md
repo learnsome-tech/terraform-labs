@@ -12,6 +12,7 @@ In the lesson: The root calls the child with a relative source and passes two va
 ## Files
 
 - [`starter/main.tf`](starter/main.tf): the listing from the lesson
+- [`starter/modules/network/main.tf`](starter/modules/network/main.tf)
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps

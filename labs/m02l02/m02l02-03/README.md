@@ -1,7 +1,7 @@
 # m02l02-03 · What appeared in the directory
 
 **Lesson:** [Initialising The Working Directory](https://learnsome.tech/learn/terraform-course/m02l02) (lesson 2.2, module 2: Your First Resource) · Pro  
-**Check:** Read along
+**Check:** Graded
 
 ## Goal
 
@@ -13,17 +13,40 @@ In the lesson: List everything, hidden files included, and you will see two new 
 
 - [`starter/main.tf`](starter/main.tf)
 - [`starter/session.sh`](starter/session.sh): the listing from the lesson
+- [`expected.txt`](expected.txt): the output the check compares with
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps
 
-1. Read `starter/session.sh` alongside the lesson.
+1. Go to the starter: `cd labs/m02l02/m02l02-03/starter`
+2. Read `session.sh`.
+3. The session types these commands, in order:
+
+   ```sh
+   ls -a
+   ls .terraform
+   ```
+4. Run it: `terraform init; sh session.sh`.
+5. Check it from the repository root: `./check m02l02-03`.
+
+## Expected output
+
+```text
+.
+..
+.cache
+.terraform
+.terraform.lock.hcl
+main.tf
+session.sh
+providers
+```
 
 ## How to check
 
-**Read along.** The listing does not run cleanly in the lab sandbox (it relies on something the sandbox cannot provide), so the site shows it read-only.
+`./check m02l02-03` copies `starter/` into a scratch directory and runs `terraform init; sh session.sh` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
 
-There is nothing to check: `./check m02l02-03` says so and moves on.
+It passes when the output matches `expected.txt` by the site's rules, within the limits. Standard output and standard error are compared after Terraform's machine-specific noise is set aside: provider download lines, advisory text, colour and blank lines are dropped, and resource ids, versions, durations, timestamps and working directories are masked. A pass here is a pass on the site.
 
 ---
 

@@ -21,7 +21,7 @@ In the lesson: Now the validation rule earns its place. Somebody writes the word
 
 1. Go to the starter: `cd labs/m03l01/m03l01-08/starter`
 2. Read `terraform.tfvars`.
-3. Run it: `terraform init; terraform plan 2>&1|head -1`.
+3. Run it: `terraform init; terraform plan 2>&1`.
 4. Check it from the repository root: `./check m03l01-08`.
 
 ## What the lesson recorded
@@ -29,12 +29,24 @@ In the lesson: Now the validation rule earns its place. Somebody writes the word
 Shown for reference; the check does not compare it.
 
 ```text
-╷
+Planning failed. Terraform encountered an error while generating this plan.
+
+
+Error: Invalid value for variable
+
+  on terraform.tfvars line 1:
+   1: environment    = "production"
+    ├────────────────
+    │ var.environment is "production"
+
+The environment must be dev, staging or prod.
+
+This was checked by the validation rule at variables.tf:4,3-13.
 ```
 
 ## How to check
 
-`./check m03l01-08` copies `starter/` into a scratch directory and runs `terraform init; terraform plan 2>&1|head -1` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
+`./check m03l01-08` copies `starter/` into a scratch directory and runs `terraform init; terraform plan 2>&1` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
 
 It runs without a pass or fail: what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail. `./check` shows the output and the exit code.
 

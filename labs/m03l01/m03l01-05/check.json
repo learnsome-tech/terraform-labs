@@ -4,7 +4,7 @@
   "title": "The file everybody actually uses",
   "mode": "run",
   "runner": "terraform",
-  "command": "terraform init; terraform plan|head -1",
+  "command": "terraform init; terraform plan",
   "main": "terraform.tfvars",
   "files": [
     "cmd.sh",

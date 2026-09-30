@@ -7,8 +7,10 @@
   "command": "terraform init; sh session.sh",
   "main": "session.sh",
   "files": [
+    "hello.txt",
     "main.tf",
-    "session.sh"
+    "session.sh",
+    "terraform.tfstate"
   ],
   "stdin": null,
   "expected": null,

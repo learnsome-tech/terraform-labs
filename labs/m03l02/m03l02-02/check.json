@@ -7,6 +7,7 @@
   "command": null,
   "main": "outputs.tf",
   "files": [
+    "main.tf",
     "outputs.tf"
   ],
   "stdin": null,
