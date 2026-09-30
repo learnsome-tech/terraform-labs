@@ -1,0 +1,21 @@
+{
+  "lab": "m01l04-03",
+  "lesson": "m01l04",
+  "title": "Initialising fetches them",
+  "mode": "graded",
+  "runner": "terraform",
+  "command": "terraform init; terraform init",
+  "main": "main.tf",
+  "files": [
+    "cmd.sh",
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

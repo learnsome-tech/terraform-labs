@@ -1,0 +1,18 @@
+{
+  "lab": "m02l02-03",
+  "lesson": "m02l02",
+  "title": "What appeared in the directory",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "session.sh",
+  "files": [
+    "main.tf",
+    "session.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "The listing does not run cleanly in the lab sandbox (it relies on something the sandbox cannot provide), so the site shows it read-only."
+}

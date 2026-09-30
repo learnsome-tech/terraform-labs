@@ -1,0 +1,20 @@
+{
+  "lab": "m04l02-02",
+  "lesson": "m04l02",
+  "title": "A small network module",
+  "mode": "checker",
+  "runner": "terraform-validate",
+  "command": "terraform init; terraform validate",
+  "main": "main.tf",
+  "files": [
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

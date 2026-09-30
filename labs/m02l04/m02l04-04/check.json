@@ -1,0 +1,21 @@
+{
+  "lab": "m02l04-04",
+  "lesson": "m02l04",
+  "title": "Previewing a destroy before doing it",
+  "mode": "run",
+  "runner": "terraform",
+  "command": "terraform init; terraform plan -destroy",
+  "main": "main.tf",
+  "files": [
+    "cmd.sh",
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": "what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail."
+}

@@ -1,0 +1,18 @@
+{
+  "lab": "m01l04-06",
+  "lesson": "m01l04",
+  "title": "Reading a version constraint",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "reading-a-version-constraint.tf",
+  "files": [
+    "main.tf",
+    "reading-a-version-constraint.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "The listing does not run cleanly in the lab sandbox (it relies on something the sandbox cannot provide), so the site shows it read-only."
+}

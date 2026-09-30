@@ -1,0 +1,17 @@
+{
+  "lab": "m02l01-01",
+  "lesson": "m02l01",
+  "title": "The whole grammar is blocks and arguments",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "the-whole-grammar-is-blocks-and-arguments.tf",
+  "files": [
+    "the-whole-grammar-is-blocks-and-arguments.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "The listing does not run cleanly in the lab sandbox (it relies on something the sandbox cannot provide), so the site shows it read-only."
+}

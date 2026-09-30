@@ -1,0 +1,18 @@
+{
+  "lab": "m04l02-03",
+  "lesson": "m04l02",
+  "title": "Keep cloud code clearly separate",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "keep-cloud-code-clearly-separate.txt",
+  "files": [
+    "keep-cloud-code-clearly-separate.txt",
+    "modules/network/main.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}

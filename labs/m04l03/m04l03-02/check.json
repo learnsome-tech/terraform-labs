@@ -1,0 +1,17 @@
+{
+  "lab": "m04l03-02",
+  "lesson": "m04l03",
+  "title": "Call the network module",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "main.tf",
+  "files": [
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "The listing does not run cleanly in the lab sandbox (it relies on something the sandbox cannot provide), so the site shows it read-only."
+}

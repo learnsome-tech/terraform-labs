@@ -1,0 +1,17 @@
+{
+  "lab": "m01l03-03",
+  "lesson": "m01l03",
+  "title": "The command line surface, in one screen",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "the-command-line-surface-in-one-screen.txt",
+  "files": [
+    "the-command-line-surface-in-one-screen.txt"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}

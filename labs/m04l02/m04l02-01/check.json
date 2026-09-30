@@ -1,0 +1,17 @@
+{
+  "lab": "m04l02-01",
+  "lesson": "m04l02",
+  "title": "The network module we can run locally",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "the-network-module-we-can-run-locally.txt",
+  "files": [
+    "the-network-module-we-can-run-locally.txt"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}

@@ -1,0 +1,20 @@
+{
+  "lab": "m05l02-02",
+  "lesson": "m05l02",
+  "title": "A focused example",
+  "mode": "checker",
+  "runner": "terraform-validate",
+  "command": "terraform init; terraform validate",
+  "main": "main.tf",
+  "files": [
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

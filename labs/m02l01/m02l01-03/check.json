@@ -1,0 +1,18 @@
+{
+  "lab": "m02l01-03",
+  "lesson": "m02l01",
+  "title": "The address is how everything is referred to",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "the-address-is-how-everything-is-referred-to.tf",
+  "files": [
+    "main.tf",
+    "the-address-is-how-everything-is-referred-to.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "The listing does not run cleanly in the lab sandbox (it relies on something the sandbox cannot provide), so the site shows it read-only."
+}

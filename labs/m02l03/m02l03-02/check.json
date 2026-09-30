@@ -1,0 +1,21 @@
+{
+  "lab": "m02l03-02",
+  "lesson": "m02l03",
+  "title": "The first plan: everything is new",
+  "mode": "graded",
+  "runner": "terraform",
+  "command": "terraform init; terraform init -input=false >/dev/null && terraform plan",
+  "main": "main.tf",
+  "files": [
+    "cmd.sh",
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

@@ -1,19 +1,32 @@
-# Native Testing With Tftest Files
+# m08l02 · Native Testing With Tftest Files
 
-**Course**: [Infrastructure as Code with Terraform](https://learnsome.tech/courses/terraform-course)  
-**Module**: CI CD Testing And Policy  
-**Lesson**: `m08l02`
+Module 8: CI CD Testing And Policy · lesson 8.2 · Pro · [Open the lesson](https://learnsome.tech/learn/terraform-course/m08l02)
 
-## Links
+**Goal:** You can place terraform test in a reviewable delivery workflow with clear verification boundaries.
 
-- [Watch lesson](https://learnsome.tech/courses/terraform-course/watch?lesson=m08l02)
-- [Handbook](https://learnsome.tech/courses/terraform-course/book#lesson-8-2)
-- [Exercises](EXERCISES.md)
+## Labs
 
-## Artifact directories
+| Lab | What it is | Check |
+| --- | --- | --- |
+| [m08l02-02](m08l02-02/) | A reviewable pipeline shape | Checker |
 
-- [`m08l02-02/`](m08l02-02/)
+## Exercises
+
+Open exercises from the lesson, to try on your own. They have no answer files: work them out, and use the labs above as reference.
+
+### Design the release gate
+
+1. Name the checks that run on every pull request.
+2. Name the approval required before apply.
+3. Write one policy rule your team needs.
+
+## Check yourself
+
+- What does terraform test verify or control?
+- Why is a plan a useful review artifact?
+- What does provider mocking remove from a test?
+- How does OPA complement Terraform tests?
 
 ---
 
-© LearnSome.tech · support@iwantto.learnsome.tech
+[Course README](../../README.md) · [Infrastructure as Code with Terraform on LearnSome.tech](https://learnsome.tech/courses/terraform-course)

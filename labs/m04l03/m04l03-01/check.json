@@ -1,0 +1,17 @@
+{
+  "lab": "m04l03-01",
+  "lesson": "m04l03",
+  "title": "The root module calls the child",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "the-root-module-calls-the-child.txt",
+  "files": [
+    "the-root-module-calls-the-child.txt"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}

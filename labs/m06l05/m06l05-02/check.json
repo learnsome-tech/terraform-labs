@@ -1,0 +1,20 @@
+{
+  "lab": "m06l05-02",
+  "lesson": "m06l05",
+  "title": "A small state example",
+  "mode": "checker",
+  "runner": "terraform-validate",
+  "command": "terraform init; terraform validate",
+  "main": "main.tf",
+  "files": [
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

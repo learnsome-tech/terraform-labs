@@ -1,0 +1,21 @@
+{
+  "lab": "m03l01-03",
+  "lesson": "m03l01",
+  "title": "Using them",
+  "mode": "checker",
+  "runner": "terraform-validate",
+  "command": "terraform init; terraform validate",
+  "main": "main.tf",
+  "files": [
+    "main.tf",
+    "variables.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

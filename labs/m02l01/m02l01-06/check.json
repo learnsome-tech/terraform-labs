@@ -1,0 +1,18 @@
+{
+  "lab": "m02l01-06",
+  "lesson": "m02l01",
+  "title": "Strings, comments and the things you will need soon",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "strings-comments-and-the-things-you-will-nee.tf",
+  "files": [
+    "main.tf",
+    "strings-comments-and-the-things-you-will-nee.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "The listing does not run cleanly in the lab sandbox (it relies on something the sandbox cannot provide), so the site shows it read-only."
+}

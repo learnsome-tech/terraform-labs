@@ -1,8 +1,0 @@
-╷
-│ Error: Missing required provider
-│
-│ This configuration requires provider registry.terraform.io/hashicorp/local,
-│ but that provider isn't available. You may be able to install it
-│ automatically by running:
-│   terraform init
-╵

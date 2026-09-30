@@ -1,0 +1,22 @@
+{
+  "lab": "m03l04-03",
+  "lesson": "m03l04",
+  "title": "Refresh the lookup and apply",
+  "mode": "run",
+  "runner": "terraform",
+  "command": "terraform init; terraform init>/dev/null;terraform apply -auto-approve|head -1",
+  "main": "main.tf",
+  "files": [
+    "cmd.sh",
+    "data.tf",
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": "what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail."
+}

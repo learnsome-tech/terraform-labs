@@ -1,0 +1,21 @@
+{
+  "lab": "m02l01-05",
+  "lesson": "m02l01",
+  "title": "The formatter shows you the canonical style",
+  "mode": "graded",
+  "runner": "terraform",
+  "command": "terraform init; terraform fmt -diff",
+  "main": "main.tf",
+  "files": [
+    "cmd.sh",
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

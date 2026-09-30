@@ -1,0 +1,18 @@
+{
+  "lab": "m04l03-03",
+  "lesson": "m04l03",
+  "title": "Types make calls safer",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "types-make-calls-safer.txt",
+  "files": [
+    "main.tf",
+    "types-make-calls-safer.txt"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}

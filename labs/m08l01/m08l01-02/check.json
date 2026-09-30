@@ -1,0 +1,19 @@
+{
+  "lab": "m08l01-02",
+  "lesson": "m08l01",
+  "title": "A reviewable pipeline shape",
+  "mode": "checker",
+  "runner": "actionlint",
+  "command": "actionlint terraform.yml",
+  "main": "terraform.yml",
+  "files": [
+    "terraform.yml"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "actionlint"
+  ],
+  "note": null
+}

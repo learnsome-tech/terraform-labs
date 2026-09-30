@@ -1,0 +1,20 @@
+{
+  "lab": "m01l03-04",
+  "lesson": "m01l03",
+  "title": "A deliberately untidy configuration",
+  "mode": "checker",
+  "runner": "terraform-validate",
+  "command": "terraform init; terraform validate",
+  "main": "main.tf",
+  "files": [
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

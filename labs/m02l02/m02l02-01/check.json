@@ -1,0 +1,17 @@
+{
+  "lab": "m02l02-01",
+  "lesson": "m02l02",
+  "title": "Four jobs, one command",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "four-jobs-one-command.txt",
+  "files": [
+    "four-jobs-one-command.txt"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}

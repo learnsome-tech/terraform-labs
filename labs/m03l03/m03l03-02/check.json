@@ -1,0 +1,20 @@
+{
+  "lab": "m03l03-02",
+  "lesson": "m03l03",
+  "title": "Collection and string functions",
+  "mode": "checker",
+  "runner": "terraform-validate",
+  "command": "terraform init; terraform validate",
+  "main": "locals.tf",
+  "files": [
+    "locals.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

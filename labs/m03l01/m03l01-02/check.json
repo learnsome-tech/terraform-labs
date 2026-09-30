@@ -1,0 +1,20 @@
+{
+  "lab": "m03l01-02",
+  "lesson": "m03l01",
+  "title": "Declaring variables properly",
+  "mode": "checker",
+  "runner": "terraform-validate",
+  "command": "terraform init; terraform validate",
+  "main": "variables.tf",
+  "files": [
+    "variables.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

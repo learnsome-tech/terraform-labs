@@ -1,0 +1,20 @@
+{
+  "lab": "m03l01-06",
+  "lesson": "m03l01",
+  "title": "Five sources, and which one wins",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "five-sources-and-which-one-wins.txt",
+  "files": [
+    "five-sources-and-which-one-wins.txt",
+    "main.tf",
+    "terraform.tfvars",
+    "variables.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}

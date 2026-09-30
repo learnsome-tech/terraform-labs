@@ -1,0 +1,23 @@
+{
+  "lab": "m03l02-07",
+  "lesson": "m03l02",
+  "title": "Locals are not variables: this is refused",
+  "mode": "graded",
+  "runner": "terraform",
+  "command": "terraform init; terraform plan -var environment=dev 2>&1|head -1",
+  "main": "extra.tf",
+  "files": [
+    "cmd.sh",
+    "extra.tf",
+    "main.tf",
+    "outputs.tf"
+  ],
+  "stdin": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

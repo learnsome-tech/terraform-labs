@@ -1,0 +1,21 @@
+{
+  "lab": "m01l03-05",
+  "lesson": "m01l03",
+  "title": "Format it, and let the tool own the style",
+  "mode": "graded",
+  "runner": "terraform",
+  "command": "terraform init; terraform fmt",
+  "main": "main.tf",
+  "files": [
+    "cmd.sh",
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

@@ -1,0 +1,20 @@
+{
+  "lab": "m03l04-02",
+  "lesson": "m03l04",
+  "title": "A local data source",
+  "mode": "checker",
+  "runner": "terraform-validate",
+  "command": "terraform init; terraform validate",
+  "main": "data.tf",
+  "files": [
+    "data.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

@@ -1,0 +1,17 @@
+{
+  "lab": "m04l05-02",
+  "lesson": "m04l05",
+  "title": "Local paths and registry versions",
+  "mode": "read-along",
+  "runner": null,
+  "command": null,
+  "main": "local-paths-and-registry-versions.txt",
+  "files": [
+    "local-paths-and-registry-versions.txt"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [],
+  "note": "It is a listing to read alongside the lesson, not a program to run."
+}

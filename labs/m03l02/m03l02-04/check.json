@@ -1,0 +1,22 @@
+{
+  "lab": "m03l02-04",
+  "lesson": "m03l02",
+  "title": "Apply, and see the outputs",
+  "mode": "run",
+  "runner": "terraform",
+  "command": "terraform init; terraform init>/dev/null;terraform apply -auto-approve|head -1",
+  "main": "main.tf",
+  "files": [
+    "cmd.sh",
+    "main.tf",
+    "outputs.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": "what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail."
+}

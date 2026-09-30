@@ -1,0 +1,21 @@
+{
+  "lab": "m02l03-04",
+  "lesson": "m02l03",
+  "title": "Apply, and watch the plan become actions",
+  "mode": "graded",
+  "runner": "terraform",
+  "command": "terraform init; terraform apply -auto-approve",
+  "main": "main.tf",
+  "files": [
+    "cmd.sh",
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

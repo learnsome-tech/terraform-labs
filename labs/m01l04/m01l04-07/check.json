@@ -1,0 +1,21 @@
+{
+  "lab": "m01l04-07",
+  "lesson": "m01l04",
+  "title": "A constraint nothing can satisfy",
+  "mode": "run",
+  "runner": "terraform",
+  "command": "terraform init; terraform init",
+  "main": "main.tf",
+  "files": [
+    "cmd.sh",
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": "what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail."
+}

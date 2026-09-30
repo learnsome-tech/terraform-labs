@@ -1,0 +1,20 @@
+{
+  "lab": "m07l04-02",
+  "lesson": "m07l04",
+  "title": "Make the backend choice explicit",
+  "mode": "checker",
+  "runner": "terraform-validate",
+  "command": "terraform init; terraform validate",
+  "main": "backend.tf",
+  "files": [
+    "backend.tf"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

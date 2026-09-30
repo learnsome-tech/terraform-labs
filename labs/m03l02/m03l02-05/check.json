@@ -1,0 +1,22 @@
+{
+  "lab": "m03l02-05",
+  "lesson": "m03l02",
+  "title": "Reading outputs from a script",
+  "mode": "run",
+  "runner": "terraform",
+  "command": "terraform init; sh session.sh",
+  "main": "session.sh",
+  "files": [
+    "main.tf",
+    "outputs.tf",
+    "session.sh"
+  ],
+  "stdin": null,
+  "expected": null,
+  "grading": null,
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": "what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail."
+}

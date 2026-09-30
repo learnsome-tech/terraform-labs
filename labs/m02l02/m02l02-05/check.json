@@ -1,0 +1,21 @@
+{
+  "lab": "m02l02-05",
+  "lesson": "m02l02",
+  "title": "Running it twice is cheap and quiet",
+  "mode": "graded",
+  "runner": "terraform",
+  "command": "terraform init; terraform init",
+  "main": "main.tf",
+  "files": [
+    "cmd.sh",
+    "main.tf"
+  ],
+  "stdin": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
+  "requires": [
+    "sh",
+    "terraform"
+  ],
+  "note": null
+}

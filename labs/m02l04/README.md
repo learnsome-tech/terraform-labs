@@ -1,24 +1,28 @@
-# Tearing It Down With Destroy
+# m02l04 · Tearing It Down With Destroy
 
-**Course**: [Infrastructure as Code with Terraform](https://learnsome.tech/courses/terraform-course)  
-**Module**: Your First Resource  
-**Lesson**: `m02l04`
+Module 2: Your First Resource · lesson 2.4 · Pro · [Open the lesson](https://learnsome.tech/learn/terraform-course/m02l04)
 
-## Links
+**Goal:** You can preview and run a destroy, explain why destroy is a first class part of the workflow rather than an accident, and name the three ways a team stops the wrong thing being destroyed.
 
-- [Watch lesson](https://learnsome.tech/courses/terraform-course/watch?lesson=m02l04)
-- [Handbook](https://learnsome.tech/courses/terraform-course/book#lesson-2-4)
-- [Exercises](EXERCISES.md)
+## Labs
 
-## Artifact directories
+| Lab | What it is | Check |
+| --- | --- | --- |
+| [m02l04-02](m02l04-02/) | Where we left off | Graded |
+| [m02l04-03](m02l04-03/) | Confirm there is something to destroy | Read along |
+| [m02l04-04](m02l04-04/) | Previewing a destroy before doing it | Runs, not graded |
+| [m02l04-05](m02l04-05/) | Destroying it | Runs, not graded |
+| [m02l04-06](m02l04-06/) | What is left behind | Runs, not graded |
+| [m02l04-07](m02l04-07/) | Three ways teams stop the wrong destroy | Read along |
 
-- [`m02l04-02/`](m02l04-02/)
-- [`m02l04-03/`](m02l04-03/)
-- [`m02l04-04/`](m02l04-04/)
-- [`m02l04-05/`](m02l04-05/)
-- [`m02l04-06/`](m02l04-06/)
-- [`m02l04-07/`](m02l04-07/)
+## Check yourself
+
+- Why is a reliable destroy a precondition for disposable environments?
+- How do you see what a destroy would do without doing it?
+- In what order are dependent resources destroyed, and who decides that order?
+- What happens to the state file after a successful destroy?
+- Why is prevent destroy a poor default for most resources?
 
 ---
 
-© LearnSome.tech · support@iwantto.learnsome.tech
+[Course README](../../README.md) · [Infrastructure as Code with Terraform on LearnSome.tech](https://learnsome.tech/courses/terraform-course)
