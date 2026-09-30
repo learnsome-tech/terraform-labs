@@ -4,26 +4,6 @@
 # it are what the terminal printed back. Run it with:  sh session.sh
 
 TF_VAR_environment=prod terraform plan | grep filename
-#   ╷
-#   │ Error: Inconsistent dependency lock file
-#   │
-#   │ The following dependency selections recorded in the lock file are
-#   │ inconsistent with the current configuration:
-#   │   - provider registry.terraform.io/hashicorp/local: required by this configuration but no version is selected
-#   │
-#   │ To make the initial dependency selections that will initialize the
-#   │ dependency lock file, run:
-#   │   terraform init
-#   ╵
+#         + filename             = "staging.json"
 terraform plan -var environment=dev | grep filename
-#   ╷
-#   │ Error: Inconsistent dependency lock file
-#   │
-#   │ The following dependency selections recorded in the lock file are
-#   │ inconsistent with the current configuration:
-#   │   - provider registry.terraform.io/hashicorp/local: required by this configuration but no version is selected
-#   │
-#   │ To make the initial dependency selections that will initialize the
-#   │ dependency lock file, run:
-#   │   terraform init
-#   ╵
+#         + filename             = "dev.json"

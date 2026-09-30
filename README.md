@@ -40,9 +40,8 @@ This repository holds the labs of the LearnSome.tech course [Infrastructure as C
 
 | Check | What `./check` does | Labs |
 | --- | --- | --- |
-| Graded | Runs the program and compares its output with `expected.txt`. | 26 |
+| Graded | Runs the program and compares its output with `expected.txt`. | 33 |
 | Checker | Validates the file with the checker the site uses (hadolint, kubeconform, actionlint, yamllint, `ansible-playbook --syntax-check` or `terraform validate`); passes when it finds no errors. | 31 |
-| Runs, not graded | Runs the program and shows its output; the site gives no pass or fail, and the lab README says why. | 7 |
 | Read along | Nothing to run here: the site shows the listing read-only, and the lab README says honestly what it needs (Docker, a cluster, a cloud account...). | 33 |
 
 ## What is published, and what is not

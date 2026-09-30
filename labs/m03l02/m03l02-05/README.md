@@ -1,7 +1,7 @@
 # m03l02-05 · Reading outputs from a script
 
 **Lesson:** [Return Values: Outputs And Locals](https://learnsome.tech/learn/terraform-course/m03l02) (lesson 3.2, module 3: Variables, Outputs And Expressions) · Pro  
-**Check:** Runs, not graded
+**Check:** Graded
 
 ## Goal
 
@@ -14,6 +14,9 @@ In the lesson: Outputs are not only printed at the end of an apply; you can ask 
 - [`starter/main.tf`](starter/main.tf)
 - [`starter/outputs.tf`](starter/outputs.tf)
 - [`starter/session.sh`](starter/session.sh): the listing from the lesson
+- [`starter/staging.json`](starter/staging.json)
+- [`starter/terraform.tfstate`](starter/terraform.tfstate)
+- [`expected.txt`](expected.txt): the output the check compares with
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps
@@ -38,35 +41,23 @@ In the lesson: Outputs are not only printed at the end of an apply; you can ask 
    - `fmt` (Format check): `terraform fmt -check -diff`
    - `output` (Output): `terraform apply -auto-approve && terraform output`
 
-## What the lesson recorded
-
-Shown for reference; the check does not compare it.
+## Expected output
 
 ```text
-╷
-│ Warning: No outputs found
-│
-│ The state file either has no outputs defined, or all the defined outputs
-│ are empty. Please define an output in your configuration with the `output`
-│ keyword and run `terraform refresh` for it to become available. If you are
-│ using interpolation, please verify the interpolated value is not empty. You
-│ can use the `terraform console` command to assist.
-╵
-╷
-│ Error: Output "machine_names" not found
-│
-│ The output variable requested could not be found in the state file. If you
-│ recently added this to your configuration, be sure to run `terraform
-│ apply`, since the state won't be updated with new output variables until
-│ that command is run.
-╵
+machine_names = [
+  "staging-orders-0",
+  "staging-orders-1",
+]
+manifest_path = "staging.json"
+summary = "staging: 2 machines"
+staging: 2 machines["staging-orders-0","staging-orders-1"]
 ```
 
 ## How to check
 
 `./check m03l02-05` copies `starter/` into a scratch directory and runs `terraform init; sh session.sh` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
 
-It runs without a pass or fail: the recorded output depends on the machine it ran on, so the site runs it without a pass or fail. `./check` shows the output and the exit code.
+It passes when the output matches `expected.txt` by the site's rules, within the limits. Standard output and standard error are compared after Terraform's machine-specific noise is set aside: provider download lines, advisory text, colour and blank lines are dropped, and resource ids, versions, durations, timestamps and working directories are masked. A pass here is a pass on the site.
 
 ---
 

@@ -2,18 +2,20 @@
   "lab": "m03l03-05",
   "lesson": "m03l03",
   "title": "Inspect a value while you work",
-  "mode": "run",
+  "mode": "graded",
   "runner": "terraform",
   "command": "terraform init; sh session.sh",
   "main": "session.sh",
   "files": [
     "locals.tf",
     "main.tf",
-    "session.sh"
+    "session.sh",
+    "summary.txt",
+    "terraform.tfstate"
   ],
   "stdin": null,
-  "expected": null,
-  "grading": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
   "requires": [
     "sh",
     "terraform"
@@ -56,5 +58,5 @@
       "line": "terraform apply -auto-approve && terraform output"
     }
   ],
-  "note": "the recorded output depends on the machine it ran on, so the site runs it without a pass or fail."
+  "note": null
 }

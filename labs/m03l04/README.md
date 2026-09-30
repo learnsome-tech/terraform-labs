@@ -9,7 +9,7 @@ Module 3: Variables, Outputs And Expressions · lesson 3.4 · Pro · [Open the l
 | Lab | What it is | Check |
 | --- | --- | --- |
 | [m03l04-02](m03l04-02/) | A local data source | Checker |
-| [m03l04-03](m03l04-03/) | Refresh the lookup and apply | Runs, not graded |
+| [m03l04-03](m03l04-03/) | Refresh the lookup and apply | Graded |
 
 ## Exercises
 

@@ -2,7 +2,7 @@
   "lab": "m02l02-03",
   "lesson": "m02l02",
   "title": "What appeared in the directory",
-  "mode": "run",
+  "mode": "graded",
   "runner": "terraform",
   "command": "terraform init; sh session.sh",
   "main": "session.sh",
@@ -11,8 +11,8 @@
     "session.sh"
   ],
   "stdin": null,
-  "expected": null,
-  "grading": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
   "requires": [
     "sh",
     "terraform"
@@ -55,5 +55,5 @@
       "line": "terraform apply -auto-approve && terraform output"
     }
   ],
-  "note": "what the listing prints in the lab sandbox differs from the output recorded for the lesson (it depends on the machine, the clock or the network), so the site runs it without a pass or fail."
+  "note": null
 }

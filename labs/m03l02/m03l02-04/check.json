@@ -2,9 +2,9 @@
   "lab": "m03l02-04",
   "lesson": "m03l02",
   "title": "Apply, and see the outputs",
-  "mode": "run",
+  "mode": "graded",
   "runner": "terraform",
-  "command": "terraform init; terraform init>/dev/null;terraform apply -auto-approve|head -1",
+  "command": "terraform init; terraform init>/dev/null;terraform apply -auto-approve",
   "main": "main.tf",
   "files": [
     "cmd.sh",
@@ -12,8 +12,8 @@
     "outputs.tf"
   ],
   "stdin": null,
-  "expected": null,
-  "grading": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
   "requires": [
     "sh",
     "terraform"
@@ -23,7 +23,7 @@
     {
       "id": "recorded",
       "label": "Lesson command",
-      "line": "terraform init; terraform init>/dev/null;terraform apply -auto-approve|head -1"
+      "line": "terraform init; terraform init>/dev/null;terraform apply -auto-approve"
     },
     {
       "id": "init",
@@ -56,5 +56,5 @@
       "line": "terraform apply -auto-approve && terraform output"
     }
   ],
-  "note": "the recorded output depends on the machine it ran on, so the site runs it without a pass or fail."
+  "note": null
 }

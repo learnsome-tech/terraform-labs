@@ -2,18 +2,20 @@
   "lab": "m03l02-05",
   "lesson": "m03l02",
   "title": "Reading outputs from a script",
-  "mode": "run",
+  "mode": "graded",
   "runner": "terraform",
   "command": "terraform init; sh session.sh",
   "main": "session.sh",
   "files": [
     "main.tf",
     "outputs.tf",
-    "session.sh"
+    "session.sh",
+    "staging.json",
+    "terraform.tfstate"
   ],
   "stdin": null,
-  "expected": null,
-  "grading": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
   "requires": [
     "sh",
     "terraform"
@@ -56,5 +58,5 @@
       "line": "terraform apply -auto-approve && terraform output"
     }
   ],
-  "note": "the recorded output depends on the machine it ran on, so the site runs it without a pass or fail."
+  "note": null
 }

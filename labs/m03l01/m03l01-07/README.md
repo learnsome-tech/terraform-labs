@@ -1,7 +1,7 @@
 # m03l01-07 · The environment beats the file, the flag beats both
 
 **Lesson:** [Parameterising With Input Variables](https://learnsome.tech/learn/terraform-course/m03l01) (lesson 3.1, module 3: Variables, Outputs And Expressions) · Pro  
-**Check:** Runs, not graded
+**Check:** Graded
 
 ## Goal
 
@@ -15,6 +15,7 @@ In the lesson: Watch the precedence rather than trusting the list. Set it in the
 - [`starter/session.sh`](starter/session.sh): the listing from the lesson
 - [`starter/terraform.tfvars`](starter/terraform.tfvars)
 - [`starter/variables.tf`](starter/variables.tf)
+- [`expected.txt`](expected.txt): the output the check compares with
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps
@@ -38,40 +39,18 @@ In the lesson: Watch the precedence rather than trusting the list. Set it in the
    - `fmt` (Format check): `terraform fmt -check -diff`
    - `output` (Output): `terraform apply -auto-approve && terraform output`
 
-## What the lesson recorded
-
-Shown for reference; the check does not compare it.
+## Expected output
 
 ```text
-╷
-│ Error: Inconsistent dependency lock file
-│
-│ The following dependency selections recorded in the lock file are
-│ inconsistent with the current configuration:
-│   - provider registry.terraform.io/hashicorp/local: required by this configuration but no version is selected
-│
-│ To make the initial dependency selections that will initialize the
-│ dependency lock file, run:
-│   terraform init
-╵
-╷
-│ Error: Inconsistent dependency lock file
-│
-│ The following dependency selections recorded in the lock file are
-│ inconsistent with the current configuration:
-│   - provider registry.terraform.io/hashicorp/local: required by this configuration but no version is selected
-│
-│ To make the initial dependency selections that will initialize the
-│ dependency lock file, run:
-│   terraform init
-╵
+      + filename             = "staging.json"
+      + filename             = "dev.json"
 ```
 
 ## How to check
 
 `./check m03l01-07` copies `starter/` into a scratch directory and runs `terraform init; sh session.sh` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
 
-It runs without a pass or fail: the recorded output depends on the machine it ran on, so the site runs it without a pass or fail. `./check` shows the output and the exit code.
+It passes when the output matches `expected.txt` by the site's rules, within the limits. Standard output and standard error are compared after Terraform's machine-specific noise is set aside: provider download lines, advisory text, colour and blank lines are dropped, and resource ids, versions, durations, timestamps and working directories are masked. A pass here is a pass on the site.
 
 ---
 

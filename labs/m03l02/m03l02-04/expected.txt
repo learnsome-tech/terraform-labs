@@ -1,0 +1,53 @@
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # local_file.manifest will be created
+  + resource "local_file" "manifest" {
+      + content              = jsonencode(
+            {
+              + machines = [
+                  + "staging-orders-0",
+                  + "staging-orders-1",
+                ]
+              + tags     = {
+                  + Environment = "staging"
+                }
+            }
+        )
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0777"
+      + filename             = "staging.json"
+      + id                   = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + machine_names = [
+      + "staging-orders-0",
+      + "staging-orders-1",
+    ]
+  + manifest_path = "staging.json"
+  + summary       = "staging: 2 machines"
+local_file.manifest: Creating...
+local_file.manifest: Creation complete after 0s [id=f7aa8ae93bf1876f13b37dcff2d96407c1d3ea4f]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+machine_names = [
+  "staging-orders-0",
+  "staging-orders-1",
+]
+manifest_path = "staging.json"
+summary = "staging: 2 machines"

@@ -9,9 +9,9 @@ Module 3: Variables, Outputs And Expressions · lesson 3.3 · Pro · [Open the l
 | Lab | What it is | Check |
 | --- | --- | --- |
 | [m03l03-02](m03l03-02/) | Collection and string functions | Checker |
-| [m03l03-03](m03l03-03/) | Evaluate the expressions | Runs, not graded |
+| [m03l03-03](m03l03-03/) | Evaluate the expressions | Graded |
 | [m03l03-04](m03l03-04/) | Conditionals, maps, and encoding | Read along |
-| [m03l03-05](m03l03-05/) | Inspect a value while you work | Runs, not graded |
+| [m03l03-05](m03l03-05/) | Inspect a value while you work | Graded |
 
 ## Check yourself
 

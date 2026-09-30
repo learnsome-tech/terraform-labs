@@ -1,0 +1,68 @@
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+ <= read (data resources)
+
+Terraform will perform the following actions:
+
+  # data.local_file.source will be read during apply
+  # (depends on a resource or a module with changes pending)
+ <= data "local_file" "source" {
+      + content              = (known after apply)
+      + content_base64       = (known after apply)
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + filename             = "source.txt"
+      + id                   = (known after apply)
+    }
+
+  # local_file.copy will be created
+  + resource "local_file" "copy" {
+      + content              = (known after apply)
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0777"
+      + filename             = "copy.txt"
+      + id                   = (known after apply)
+    }
+
+  # local_file.source will be created
+  + resource "local_file" "source" {
+      + content              = "managed elsewhere"
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0777"
+      + filename             = "source.txt"
+      + id                   = (known after apply)
+    }
+
+Plan: 2 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + read_content = (known after apply)
+local_file.source: Creating...
+local_file.source: Creation complete after 0s [id=a69651e86f93b0ebbc034f22b64520ab35d2c1c3]
+data.local_file.source: Reading...
+data.local_file.source: Read complete after 0s [id=a69651e86f93b0ebbc034f22b64520ab35d2c1c3]
+local_file.copy: Creating...
+local_file.copy: Creation complete after 0s [id=a69651e86f93b0ebbc034f22b64520ab35d2c1c3]
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+read_content = "managed elsewhere"

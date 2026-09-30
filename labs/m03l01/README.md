@@ -13,7 +13,7 @@ Module 3: Variables, Outputs And Expressions · lesson 3.1 · Pro · [Open the l
 | [m03l01-04](m03l01-04/) | Supplying a value on the command line | Graded |
 | [m03l01-05](m03l01-05/) | The file everybody actually uses | Graded |
 | [m03l01-06](m03l01-06/) | Five sources, and which one wins | Read along |
-| [m03l01-07](m03l01-07/) | The environment beats the file, the flag beats both | Runs, not graded |
+| [m03l01-07](m03l01-07/) | The environment beats the file, the flag beats both | Graded |
 | [m03l01-08](m03l01-08/) | Validation stops a bad value before anything is built | Graded |
 | [m03l01-09](m03l01-09/) | Types, sensitivity and the optional modifier | Read along |
 

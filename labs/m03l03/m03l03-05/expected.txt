@@ -1,0 +1,12 @@
+{
+  "first_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "ada"
+  },
+  "headline": {
+    "sensitive": false,
+    "type": "string",
+    "value": "Ada, Linus, Grace"
+  }
+}

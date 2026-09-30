@@ -2,7 +2,7 @@
   "lab": "m03l01-07",
   "lesson": "m03l01",
   "title": "The environment beats the file, the flag beats both",
-  "mode": "run",
+  "mode": "graded",
   "runner": "terraform",
   "command": "terraform init; sh session.sh",
   "main": "session.sh",
@@ -13,8 +13,8 @@
     "variables.tf"
   ],
   "stdin": null,
-  "expected": null,
-  "grading": null,
+  "expected": "expected.txt",
+  "grading": "terraform",
   "requires": [
     "sh",
     "terraform"
@@ -57,5 +57,5 @@
       "line": "terraform apply -auto-approve && terraform output"
     }
   ],
-  "note": "the recorded output depends on the machine it ran on, so the site runs it without a pass or fail."
+  "note": null
 }

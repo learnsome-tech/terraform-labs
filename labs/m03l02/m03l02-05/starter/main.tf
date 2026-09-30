@@ -1,5 +1,11 @@
-variable "environment" { type = string }
-variable "instance_count" { type = number }
+variable "environment" {
+  type    = string
+  default = "staging"
+}
+variable "instance_count" {
+  type    = number
+  default = 2
+}
 locals {
   prefix = "${var.environment}-orders"
   machine_names = [for i in range(2) : format("%s-%d",local.prefix,i)]

@@ -1,7 +1,7 @@
 # m03l03-03 · Evaluate the expressions
 
 **Lesson:** [Functions And Expressions In HCL](https://learnsome.tech/learn/terraform-course/m03l03) (lesson 3.3, module 3: Variables, Outputs And Expressions) · Pro  
-**Check:** Runs, not graded
+**Check:** Graded
 
 ## Goal
 
@@ -14,16 +14,17 @@ In the lesson: Run the expressions by applying this small configuration. The pro
 - [`starter/cmd.sh`](starter/cmd.sh): the Terraform commands the lesson ran
 - [`starter/locals.tf`](starter/locals.tf)
 - [`starter/main.tf`](starter/main.tf): the listing from the lesson
+- [`expected.txt`](expected.txt): the output the check compares with
 - [`check.json`](check.json): how `./check` runs and checks this lab
 
 ## Steps
 
 1. Go to the starter: `cd labs/m03l03/m03l03-03/starter`
 2. Read `main.tf`.
-3. Run it: `terraform init; terraform init>/dev/null;terraform apply -auto-approve|head -1`.
+3. Run it: `terraform init; terraform init>/dev/null;terraform apply -auto-approve`.
 4. Check it from the repository root: `./check m03l03-03`.
 5. The site offers these commands for this lab; the first is the default, and the only one graded. Run another with `./check m03l03-03 --command=<id>`:
-   - `recorded` (Lesson command): `terraform init; terraform init>/dev/null;terraform apply -auto-approve|head -1`
+   - `recorded` (Lesson command): `terraform init; terraform init>/dev/null;terraform apply -auto-approve`
    - `init` (Init): `terraform init`
    - `validate` (Validate): `terraform validate`
    - `plan` (Plan): `terraform plan`
@@ -31,60 +32,51 @@ In the lesson: Run the expressions by applying this small configuration. The pro
    - `fmt` (Format check): `terraform fmt -check -diff`
    - `output` (Output): `terraform apply -auto-approve && terraform output`
 
-## What the lesson recorded
-
-Shown for reference; the check does not compare it.
+## Expected output
 
 ```text
-╷
-│ Error: Terraform encountered problems during initialisation, including problems
-│ with the configuration, described below.
-│
-│ The Terraform configuration must be valid before initialization so that
-│ Terraform can determine which modules and providers need to be installed.
-│
-│
-╵
-╷
-│ Error: Duplicate variable declaration
-│
-│   on main.tf line 9:
-│    9: variable "names" { default = ["Ada", "Linus", "Grace"] }
-│
-│ A variable named "names" was already declared at locals.tf:1,1-17. Variable
-│ names must be unique within a module.
-╵
-╷
-│ Error: Duplicate variable declaration
-│
-│   on main.tf line 9:
-│    9: variable "names" { default = ["Ada", "Linus", "Grace"] }
-│
-│ A variable named "names" was already declared at locals.tf:1,1-17. Variable
-│ names must be unique within a module.
-╵
-╷
-│ Error: Duplicate local value definition
-│
-│   on main.tf line 11, in locals:
-│   11:   normalised = [for name in var.names : lower(trimspace(name))]
-│
-│ A local value named "normalised" was already defined at locals.tf:7,3-64.
-│ Local value names must be unique within a module.
-╵
-╷
-│ Error: Duplicate local value definition
-│
-│   on main.tf line 11, in locals:
-```
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
 
-(50 more lines.)
+Terraform will perform the following actions:
+
+  # local_file.summary will be created
+  + resource "local_file" "summary" {
+      + content              = "Ada, Linus, Grace"
+      + content_base64sha256 = (known after apply)
+      + content_base64sha512 = (known after apply)
+      + content_md5          = (known after apply)
+      + content_sha1         = (known after apply)
+      + content_sha256       = (known after apply)
+      + content_sha512       = (known after apply)
+      + directory_permission = "0777"
+      + file_permission      = "0777"
+      + filename             = "summary.txt"
+      + id                   = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+Changes to Outputs:
+  + first_name = "ada"
+  + headline   = "Ada, Linus, Grace"
+local_file.summary: Creating...
+local_file.summary: Creation complete after 0s [id=12d55a1f56665653f0b22bf5655bdc2b6e146ba1]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+first_name = "ada"
+headline = "Ada, Linus, Grace"
+```
 
 ## How to check
 
-`./check m03l03-03` copies `starter/` into a scratch directory and runs `terraform init; terraform init>/dev/null;terraform apply -auto-approve|head -1` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
+`./check m03l03-03` copies `starter/` into a scratch directory and runs `terraform init; terraform init>/dev/null;terraform apply -auto-approve` there, the way the site's lab sandbox does: that directory is the working directory and `HOME`, `LANG=C.UTF-8`, `TZ=UTC`, a limit of 10 seconds and 256 KiB of output per stream.
 
-It runs without a pass or fail: the recorded output depends on the machine it ran on, so the site runs it without a pass or fail. `./check` shows the output and the exit code.
+It passes when the output matches `expected.txt` by the site's rules, within the limits. Standard output and standard error are compared after Terraform's machine-specific noise is set aside: provider download lines, advisory text, colour and blank lines are dropped, and resource ids, versions, durations, timestamps and working directories are masked. A pass here is a pass on the site.
 
 ---
 

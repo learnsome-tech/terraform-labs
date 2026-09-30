@@ -1,0 +1,7 @@
+machine_names = [
+  "staging-orders-0",
+  "staging-orders-1",
+]
+manifest_path = "staging.json"
+summary = "staging: 2 machines"
+staging: 2 machines["staging-orders-0","staging-orders-1"]
